@@ -4,6 +4,7 @@
     --accent-color: #BBF330;
     --accent-btn-color: #FFE450;
     --border-color: #FFE550;
+    --text-link-color: #7EB101;
 
 }
 
@@ -94,14 +95,6 @@ button {
 .button.secondary:focus {
     background-color: var(--accent-color);
 }
-
-.button.thirdly {
-    background-color: var(--accent-color);
-}
-
-.button.thirdly:hover,
-.button.thirdly:focus {
-    background-color: var(--accent-btn-color);
 
 /*----------------Main Part!------------------*/
 
@@ -231,3 +224,38 @@ button {
     line-height: 1.5;
 }
 
+/*----------------Site Footer!------------------*/
+
+.page-footer .text-subscripe {
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.page-footer .text-privacy {
+
+    font-size: 12px;
+    line-height: 1.17;
+}
+
+.page-footer .text-privacy .link {
+
+    color: var(--text-link-color);
+    text-decoration: underline;
+}
+
+.page-footer .settings .item .link {
+
+    color: var(--text-link-color);
+
+    font-size: 12px;
+    line-height: 1.17;
+    text-decoration: underline;
+}
+
+.page-footer .all-rights {
+
+    font-size: 12px;
+    line-height: 1.17;
+}
