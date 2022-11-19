@@ -117,7 +117,7 @@ button {
   right: 0;
   padding: 25px 50px;
   opacity: 0;
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 .arrow {
 
@@ -155,11 +155,11 @@ button {
 
 /*-----Select  element-----*/
 
-[id^="item"] {
+[id^="foto"] {
   display: none;
 }
 
-.item-1 {
+.foto-first {
   z-index: 2;
   opacity: 1;
   background: url("/images/Foto-1-min.jpg");
@@ -167,29 +167,29 @@ button {
   border: 26px solid var(--border-color);
   border-radius: 269px;
 }
-.item-2 {
+.foto-second {
   background: url("/images/Foto-2-min.jpg");
   background-size: cover;
   border: 26px solid var(--border-color);
   border-radius: 269px;
 }
-.item-3 {
+.foto-third {
   background: url("/images/Foto-3-min.jpg");
   background-size: cover;
   border: 26px solid var(--border-color);
   border-radius: 269px;
 }
 
-:target ~ .item-1 {
+:target ~ .foto-first {
   opacity: 0;
 }
 
-#item-1:target ~ .item-1 {
+#foto-first:target ~ .foto-first {
   opacity: 1;
 }
 
-#item-2:target ~ .item-2,
-#item-3:target ~ .item-3 {
+#foto-second:target ~ .foto-second,
+#foto-third:target ~ .foto-third {
   z-index: 3;
   opacity: 1;
 }
