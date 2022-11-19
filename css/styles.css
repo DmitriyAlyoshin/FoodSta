@@ -1,46 +1,41 @@
 :root {
-    --primary-color: #2c2c2c;
-    --primary-white-color: #ffffff;
-    --accent-color: #BBF330;
-    --accent-btn-color: #FFE450;
-    --border-color: #FFE550;
-    --text-link-color: #7EB101;
-
+  --primary-color: #2c2c2c;
+  --primary-white-color: #ffffff;
+  --accent-color: #bbf330;
+  --accent-btn-color: #ffe450;
+  --border-color: #ffe550;
+  --text-link-color: #7eb101;
 }
 
 body {
-    color: var(--primary-color);
-    background-color: var(--primary-white-color);
+  color: var(--primary-color);
+  background-color: var(--primary-white-color);
 
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-
-
 .list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .item {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
-
 
 /*----------------Site Header!------------------*/
 
@@ -49,51 +44,47 @@ button {
 /*-----Site-nav-----*/
 
 .site-nav .link {
+  color: var(--primary-color);
 
-    color: var(--primary-color);
-
-    font-size: 14px;
-    line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
 
-    color: var(--accent-color);
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-decoration-line: underline;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration-line: underline;
 }
 
 /*-----Button!-----*/
 
 .button {
-
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
-    text-align: right;
-
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: right;
 }
 
 .button.primary {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .button.primary:hover,
 .button.primary:focus {
-    background-color: var(--accent-btn-color);
+  background-color: var(--accent-btn-color);
 }
 
 .button.secondary {
-    background-color: var(--primary-white-color);
+  background-color: var(--primary-white-color);
 }
 
 .button.secondary:hover,
 .button.secondary:focus {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 /*----------------Main Part!------------------*/
@@ -101,46 +92,40 @@ button {
 /*-----Hero!-----*/
 
 .hero .image {
-    border: 26px solid var(--border-color);
-    border-radius: 269px;
+  border: 26px solid var(--border-color);
+  border-radius: 269px;
 }
 
 .hero .title {
-
-    font-size: 48px;
-    line-height: 1.2;
+  font-size: 48px;
+  line-height: 1.2;
 }
 
 .hero .text {
-
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /*-----Our offerings!-----*/
 
 .offerings .title {
-
-    font-size: 42px;
-    line-height: 1.2;
+  font-size: 42px;
+  line-height: 1.2;
 }
 
 .offerings .text {
-
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .offerings .item-title {
-
-    font-size: 18px;
-    line-height: 1.4;
+  font-size: 18px;
+  line-height: 1.4;
 }
 
 .offerings .item-text {
-
-    font-size: 14px;
-    line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* .offerings .image {
@@ -151,111 +136,95 @@ button {
 /*-----Favorites!-----*/
 
 .favorites .title {
-
-    font-size: 42px;
-    line-height: 1.17;
-    text-align: center;
+  font-size: 42px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .favorites .text {
-
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 .favorites .item {
-
-    width: 347px;
-    border: 16px solid var(--border-color);
-    border-radius: 197.5px;
+  width: 347px;
+  border: 16px solid var(--border-color);
+  border-radius: 197.5px;
 }
 
 .favorites .image {
-
-    border-color: transparent;
-    border-radius: 157.5px;
+  border-color: transparent;
+  border-radius: 157.5px;
 }
 
 /*-----Customers Say!-----*/
 
 .customers .title {
-
-    font-size: 42px;
-    line-height: 1.17;
+  font-size: 42px;
+  line-height: 1.17;
 }
 
 .customers .text {
-
-    font-size: 16px;
-    line-height: 1.19;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .customers .item-title {
-
-    font-size: 18px;
-    line-height: 1.17;
+  font-size: 18px;
+  line-height: 1.17;
 }
 
 .customers .name {
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .customers .dude {
-
-    font-size: 14px;
-    line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /*-----Special Offers!-----*/
 
 .offers .title {
-
-    font-size: 42px;
-    line-height: 1.2;
+  font-size: 42px;
+  line-height: 1.2;
 }
 
 .offers .text {
-
-    font-size: 16px;
-    line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /*----------------Site Footer!------------------*/
 
 .page-footer .text-subscripe {
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.5;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .page-footer .text-privacy {
-
-    font-size: 12px;
-    line-height: 1.17;
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 .page-footer .text-privacy .link {
-
-    color: var(--text-link-color);
-    text-decoration: underline;
+  color: var(--text-link-color);
+  text-decoration: underline;
 }
 
 .page-footer .settings .item .link {
+  color: var(--text-link-color);
 
-    color: var(--text-link-color);
-
-    font-size: 12px;
-    line-height: 1.17;
-    text-decoration: underline;
+  font-size: 12px;
+  line-height: 1.17;
+  text-decoration: underline;
 }
 
 .page-footer .all-rights {
-
-    font-size: 12px;
-    line-height: 1.17;
+  font-size: 12px;
+  line-height: 1.17;
 }
