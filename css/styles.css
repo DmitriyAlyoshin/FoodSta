@@ -32,54 +32,29 @@ button {
   text-decoration: none;
 }
 
-.item {
+.item, 
+.title, 
+.text {
   margin: 0;
   padding: 0;
-}
-
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin: 0 auto;
-    /* outline: 2px solid tomato ; */
-}
-
-/*----------------Site Header!------------------*/
-
-/*-----Logo-----*/
-
-/*-----Site-nav-----*/
-
-.site-nav .link {
-  color: var(--primary-color);
-
-  font-size: 14px;
-  line-height: 1.14;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-decoration-line: underline;
 }
 
 /*-----Button!-----*/
 
 .button {
+  display: inline-block;
+  border-radius: 30px;
+  min-width: 98px;
+  border-width: 0;
+
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
-  text-align: right;
+  text-align: center;
 }
 
 .button.primary {
+  padding: 6px 18px;
   background-color: var(--accent-color);
 }
 
@@ -97,9 +72,83 @@ button {
   background-color: var(--accent-color);
 }
 
+.container {
+  width: 1280px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  /* outline: 2px solid tomato ; */
+}
+
+/*----------------Site Header!------------------*/
+
+/*-----Logo-----*/
+
+/*-----Site-nav-----*/
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  margin-left: auto;
+}
+
+.site-nav .list {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.site-nav .link {
+  display: block;
+
+  color: var(--primary-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration-line: underline;
+}
+
+.site-nav .item:not(:first-child) {
+  padding-left: 28px;
+}
+
+.main-nav .button.primary {
+  margin-left: 30px;
+}
+
 /*----------------Main Part!------------------*/
 
 /*-----Hero!-----*/
+
+.hero {
+  display: flex;
+}
+
+.hero .hero-text {
+  width: 500px;
+  
+  padding-top: 159px;
+}
+
+.hero .hero-text .title {
+  padding-bottom: 28px;
+}
+
+.hero .hero-text .text {
+padding-bottom: 40px;
+}
 
 .hero .title {
   font-size: 48px;
@@ -114,11 +163,15 @@ button {
 /*-----Slayder!------*/
 
 .carousel-wrapper {
+  display: block;
   width: 528px;
   height: 528px;
   position: relative;
-  margin: auto;
+  margin-left: auto;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
+
 .carousel-item {
   position: absolute;
   top: 0;
@@ -130,7 +183,6 @@ button {
   transition: all 1s ease-out;
 }
 .arrow {
-
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -151,19 +203,7 @@ button {
   transform: translateY(-50%) rotate(-45deg);
 }
 
-/* .light {
-  color: white;
-} */
-
-/* @media (max-width: 480px) {
-  .arrow,
-  .light .arrow {
-    background-size: 10px;
-    background-position: 10px 50%;
-  }
-} */
-
-/*-----Select  element-----*/
+/*-----Select slayder's element-----*/
 
 [id^="foto"] {
   display: none;
@@ -206,9 +246,30 @@ button {
 
 /*-----Our offerings!-----*/
 
+.offerings {
+  display: flex;
+  background-color: var(--border-color);
+}
+
+.offerings .image {
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 275px;
+}
+
+.offerings-text {
+  width: 575px;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-top: 99px;
+}
+
 .offerings .title {
   font-size: 42px;
   line-height: 1.2;
+}
+
+.offerings .list {
+  display: flex;
 }
 
 .offerings .text {
@@ -225,11 +286,6 @@ button {
   font-size: 14px;
   line-height: 1.5;
 }
-
-/* .offerings .image {
-    border: 5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 275px;
-} */
 
 /*-----Favorites!-----*/
 

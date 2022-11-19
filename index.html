@@ -26,20 +26,20 @@
 
     <header class="page-header">
 
-        <div class="container">
-        <img src="" alt="Logo" id="home" class="logo">
+        <div class="container main-nav">
+            <img src="" alt="Logo" id="home" class="logo">
 
-        <nav class="site-nav">
-            <ul class="site-nav list">
-                <li class="item"><a href="#home" class="link">Home</a></li>
-                <li class="item"><a href="#about" class="link">About</a></li>
-                <li class="item"><a href="#service" class="link">Service</a></li>
-                <li class="item"><a href="#menu" class="link">Menu</a></li>
-                <li class="item"><a href="#contacts" class="link">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="site-nav">
+                <ul class="site-nav list">
+                    <li class="item"><a href="#home" class="link">Home</a></li>
+                    <li class="item"><a href="#about" class="link">About</a></li>
+                    <li class="item"><a href="#service" class="link">Service</a></li>
+                    <li class="item"><a href="#menu" class="link">Menu</a></li>
+                    <li class="item"><a href="#contacts" class="link">Contact</a></li>
+                </ul>
+            </nav>
 
-        <button type="button" class="button primary">Order Now</button>
+            <button type="button" class="button primary">Order Now</button>
         </div>
 
     </header>
@@ -50,16 +50,22 @@
 
         <!--Hero!-->
 
-        <section class="hero">
+        <section class="hero container">
 
-            <h1 class="title" id="about">Enjoy Your Favorite Food From Anywhere</h1>
-            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita illo id corporis odit
-                amet tempora,
-                numquam deserunt modi animi aut eos! Consectetur libero dolorum recusandae sed voluptas aliquam quo
-                omnis.
-            </p>
 
-            <button type="button" class="button primary">Order Now</button>
+
+            <div class="hero-text">
+                <h1 class="title" id="about">Enjoy Your Favorite Food From Anywhere</h1>
+                <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita illo id corporis
+                    odit
+                    amet tempora,
+                    numquam deserunt modi animi aut eos! Consectetur libero dolorum recusandae sed voluptas aliquam
+                    quo
+                    omnis.
+                </p>
+
+                <button type="button" class="button primary">Order Now</button>
+            </div>
 
             <div class="carousel-wrapper image">
                 <span id="foto-first"></span>
@@ -73,26 +79,30 @@
                 </div>
 
                 <div class="carousel-item foto-second">
-                    
+
                     <a class="arrow arrow-prev" href="#foto-first"></a>
                     <a class="arrow arrow-next" href="#foto-third"></a>
 
                 </div>
 
                 <div class="carousel-item foto-third">
-                   
+
                     <a class="arrow arrow-prev" href="#foto-second"></a>
                     <a class="arrow arrow-next" href="#foto-first"></a>
 
                 </div>
             </div>
 
+
         </section>
 
         <!--Our offerings!-->
 
-        <section class="offerings">
+        <section class="offerings container">
 
+            <img src="./images/apple.jpg" alt="Apple" class="image" width="396">
+
+            <div class="offerings-text">
             <h2 class="title" id="service">What’s Special About Our Offerings</h2>
             <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat necessitatibus explicabo in
                 eveniet quod
@@ -115,12 +125,11 @@
                         animi fugit nesciunt
                         hic.</p>
                 </li>
-            </ul>
+            </ul>            
 
             <button type="button" class="button foto-secondary">Order Now</button>
-
-            <img src="./images/apple.jpg" alt="Apple" class="image" width="396">
-
+            </div>
+            
         </section>
 
         <!--Favorites!-->
