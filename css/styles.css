@@ -32,8 +32,8 @@ button {
   text-decoration: none;
 }
 
-.item, 
-.title, 
+.item,
+.title,
 .text {
   margin: 0;
   padding: 0;
@@ -138,7 +138,7 @@ button {
 
 .hero .hero-text {
   width: 500px;
-  
+
   padding-top: 159px;
 }
 
@@ -147,7 +147,7 @@ button {
 }
 
 .hero .hero-text .text {
-padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .hero .title {
@@ -178,9 +178,8 @@ padding-bottom: 40px;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 25px 50px;
   opacity: 0;
-  transition: all 1s ease-out;
+  transition: all 3s ease-out;
 }
 .arrow {
   border: solid black;
@@ -215,19 +214,19 @@ padding-bottom: 40px;
   background: url("../images/Foto-1-min.jpg");
   background-size: cover;
   border: 26px solid var(--border-color);
-  border-radius: 269px;
+  border-radius: 50%;
 }
 .foto-second {
   background: url("../images/Foto-2-min.jpg");
   background-size: cover;
   border: 26px solid var(--border-color);
-  border-radius: 269px;
+  border-radius: 50%;
 }
 .foto-third {
   background: url("../images/Foto-3-min.jpg");
   background-size: cover;
   border: 26px solid var(--border-color);
-  border-radius: 269px;
+  border-radius: 50%;
 }
 
 :target ~ .foto-first {
@@ -252,8 +251,8 @@ padding-bottom: 40px;
 }
 
 .offerings .image {
-    border: 5px solid rgba(255, 255, 255, 0.5);
-    border-radius: 275px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 275px;
 }
 
 .offerings-text {
@@ -289,27 +288,45 @@ padding-bottom: 40px;
 
 /*-----Favorites!-----*/
 
+.favorites {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  text-align: center;
+}
+
 .favorites .title {
+  margin-bottom: 20px;
+
   font-size: 42px;
   line-height: 1.17;
-  text-align: center;
 }
 
 .favorites .text {
+  margin-bottom: 40px;
+
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
-.favorites .item {
-  width: 347px;
+.favorites .list {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 395px auto 395px;
+  grid-template-rows: auto;
+
+  /* justify-items: center;
+  align-items: center; */
+}
+
+.favorites .item .image {
+  width: 395px;
+  padding: 24px;
+
+  border-radius: 50%;
+
+  background-color: var(--primary-white-color-color);
   border: 16px solid var(--border-color);
-  border-radius: 197.5px;
-}
-
-.favorites .image {
-  border-color: transparent;
-  border-radius: 157.5px;
 }
 
 /*-----Customers Say!-----*/
