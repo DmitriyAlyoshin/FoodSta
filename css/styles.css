@@ -212,19 +212,19 @@ padding-bottom: 40px;
 .foto-first {
   z-index: 2;
   opacity: 1;
-  background: url("/images/Foto-1-min.jpg");
+  background: url("../images/Foto-1-min.jpg");
   background-size: cover;
   border: 26px solid var(--border-color);
   border-radius: 269px;
 }
 .foto-second {
-  background: url("/images/Foto-2-min.jpg");
+  background: url("../images/Foto-2-min.jpg");
   background-size: cover;
   border: 26px solid var(--border-color);
   border-radius: 269px;
 }
 .foto-third {
-  background: url("/images/Foto-3-min.jpg");
+  background: url("../images/Foto-3-min.jpg");
   background-size: cover;
   border: 26px solid var(--border-color);
   border-radius: 269px;
