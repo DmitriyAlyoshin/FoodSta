@@ -64,6 +64,9 @@ button {
 }
 
 .button.secondary {
+  padding: 8px 20px;
+  border: 2px solid var(--text-link-color);
+
   background-color: var(--primary-white-color);
 }
 
@@ -76,8 +79,7 @@ button {
   width: 1280px;
   padding-left: 16px;
   padding-right: 16px;
-  margin: 0 auto;
-  /* outline: 2px solid tomato ; */
+  margin: 0 auto;  
 }
 
 /*----------------Site Header!------------------*/
@@ -260,31 +262,71 @@ button {
 
 .offerings-text {
   width: 575px;
+
   margin-left: auto;
   margin-right: 50px;
-  margin-top: 260px;
+
+  padding-top: 260px;
 }
 
 .offerings .title {
+  margin-bottom: 20px;
+  width: 525px;
+
   font-size: 42px;
   line-height: 1.2;
 }
 
-.offerings .list {
-  display: flex;
-}
-
 .offerings .text {
+  margin-bottom: 40px;
+  width: 500px;
+
   font-size: 16px;
   line-height: 1.5;
 }
 
+.offerings .list {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.offerings .list .item::before {
+  display: inline-block;
+  margin-bottom: 8px;
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px;
+}
+
+.icon-delivery::before {
+  background-image: url('../images/icon-delivery.svg');
+}
+
+.icon-order::before {
+  background-image: url("../images/icon-order.svg");
+}
+
+.offerings .item:first-child {
+  padding-right: 67px;
+}
+
 .offerings .item-title {
+  margin-top: 0;
+  margin-bottom: 16px;
+
   font-size: 18px;
   line-height: 1.4;
 }
 
 .offerings .item-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 14px;
   line-height: 1.5;
 }
