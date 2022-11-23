@@ -181,7 +181,7 @@ button {
   left: 0;
   right: 0;
   opacity: 0;
-  transition: all 3s ease-out;
+  transition: 3s ease-out;
 }
 .arrow {
   border: solid black;
@@ -257,8 +257,10 @@ button {
     url("../images/background-offering.png");
   background-repeat: no-repeat;
   background-size: 502px, cover;
-  background-position: bottom 43px left 16px, center;
+  background-position: bottom 43px left 16px, center;  
 }
+
+
 
 .offerings-text {
   width: 575px;
@@ -376,14 +378,31 @@ button {
 
 /*-----Customers Say!-----*/
 
+.customers {  
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  height: 647px;
+
+  background-image: url("../images/Background-customers.png");
+}
+
 .customers .title {
   font-size: 42px;
   line-height: 1.17;
+  margin-bottom: 20px;
 }
 
 .customers .text {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 32px;
+}
+
+.customers .list {
+  display: grid;  
+  grid-template-columns: repeat(2, 501px);
+  column-gap: 139px;
 }
 
 .customers .item-title {
