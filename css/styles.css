@@ -508,10 +508,36 @@ button {
 
 /*----------------Site Footer!------------------*/
 
-.page-footer .text-subscripe {
+.page-footer {
+  display: flex; 
+  margin-top: 100px; 
+}
+
+.page-footer .footer-nav {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.page-footer .logo {
+  margin-top: 0;
+  margin-right: 148px;
+}
+
+.page-footer .subscribe {
+  display: inline-block;
+  margin-left: 320px;
+}
+
+.page-footer .subscribe .text-subscripe {
+  display: block;
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
+}
+.footer-nav .subscribe .buttons-footer {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .page-footer .text-privacy {
@@ -524,6 +550,15 @@ button {
   text-decoration: underline;
 }
 
+.page-footer .privacy {
+  margin-top: 80px;
+  display: flex;
+}
+
+.page-footer .privacy .list {
+  display: flex;
+}
+
 .page-footer .settings .item .link {
   color: var(--text-link-color);
 
@@ -533,6 +568,7 @@ button {
 }
 
 .page-footer .all-rights {
+  margin-left: auto;
   font-size: 12px;
   line-height: 1.17;
 }
