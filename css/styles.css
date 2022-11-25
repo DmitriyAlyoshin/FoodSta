@@ -79,7 +79,7 @@ button {
   width: 1280px;
   padding-left: 16px;
   padding-right: 16px;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 /*----------------Site Header!------------------*/
@@ -184,24 +184,34 @@ button {
   transition: 3s ease-out;
 }
 .arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
   display: inline-block;
-  padding: 12px;
+  width: 48px;
+  height: 40px;
+
+  background-image: url("../images/arrows/Arrow-def.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 29px;
+  background-position: center;
+  background-color: var(--primary-white-color);
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);  
 }
 
 .arrow-prev {
-  left: -30px;
+  left: -40px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%) rotate(135deg);
 }
 
 .arrow-next {
-  right: -30px;
+  right: -40px;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
+  transform: rotate(-180deg);
+}
+
+.arrow:hover {
+  background-image: url("../images/arrows/Arrow-hover.svg");
 }
 
 /*-----Select slayder's element-----*/
@@ -257,10 +267,8 @@ button {
     url("../images/background-offering.png");
   background-repeat: no-repeat;
   background-size: 502px, cover;
-  background-position: bottom 43px left 16px, center;  
+  background-position: bottom 43px left 16px, center;
 }
-
-
 
 .offerings-text {
   width: 575px;
@@ -292,25 +300,21 @@ button {
   margin-bottom: 32px;
 }
 
-.offerings .list .item::before {
-  display: inline-block;
+.offerings .icon {
   margin-bottom: 8px;
-  content: "";
+
+  display: flex;
   width: 48px;
   height: 48px;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-link-color);
   background-color: var(--primary-white-color);
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 32px;
 }
 
-.icon-delivery::before {
-  background-image: url('../images/icon-delivery.svg');
-}
-
-.icon-order::before {
-  background-image: url("../images/icon-order.svg");
+.offerings .icon .icon-offerings {
+  fill: currentColor;
 }
 
 .offerings .item:first-child {
@@ -378,7 +382,7 @@ button {
 
 /*-----Customers Say!-----*/
 
-.customers {  
+.customers {
   padding-top: 100px;
   padding-bottom: 200px;
 
@@ -400,7 +404,7 @@ button {
 }
 
 .customers .list {
-  display: grid;  
+  display: grid;
   grid-template-columns: repeat(2, 501px);
   column-gap: 139px;
 }
