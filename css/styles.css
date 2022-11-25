@@ -181,7 +181,7 @@ button {
   left: 0;
   right: 0;
   opacity: 0;
-  transition: 3s ease-out;
+  transition: all 0.5s ease-out;
 }
 .arrow {
   display: inline-block;
@@ -194,7 +194,7 @@ button {
   background-position: center;
   background-color: var(--primary-white-color);
   border-radius: 8px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
 }
 
 .arrow-prev {
@@ -210,8 +210,14 @@ button {
   transform: rotate(-180deg);
 }
 
-.arrow:hover {
+.arrow:hover,
+.arrow:focus {
   background-image: url("../images/arrows/Arrow-hover.svg");
+}
+
+.arrow:active {
+  background-image: url("../images/arrows/Arrow-def.svg");
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
 }
 
 /*-----Select slayder's element-----*/
@@ -387,7 +393,6 @@ button {
   padding-bottom: 200px;
 
   height: 647px;
-
   background-image: url("../images/Background-customers.png");
 }
 
@@ -397,30 +402,65 @@ button {
   margin-bottom: 20px;
 }
 
-.customers .text {
+.customers .text-customers {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 32px;
 }
 
-.customers .list {
+.customers .list-customer-say {
   display: grid;
   grid-template-columns: repeat(2, 501px);
   column-gap: 139px;
 }
 
+.customers .item-customer-say {
+  padding: 14px;
+  background-color: var(--primary-white-color);
+  border-radius: 0 30px 30px 30px;
+}
+
 .customers .item-title {
   font-size: 18px;
   line-height: 1.17;
+
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.customers .item-title::before {
+  display: block;
+  content: "";
+  width: 101px;
+  height: 16px;
+  margin-bottom: 28px;
+  background-image: url("../images/Star.svg");
+  background-repeat: space;
+}
+
+.customers .about-dude {
+  display: flex;
+  width: 160px;
+  border-right: 1px solid var(--text-link-color);
+}
+
+.customers .foto-dude {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
 }
 
 .customers .name {
+  margin-top: 4px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
 }
 
 .customers .dude {
+  margin-top: 2px;
+  
   font-size: 14px;
   line-height: 1.5;
 }
