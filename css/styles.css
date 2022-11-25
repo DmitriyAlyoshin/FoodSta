@@ -460,21 +460,50 @@ button {
 
 .customers .dude {
   margin-top: 2px;
-  
+
   font-size: 14px;
   line-height: 1.5;
 }
 
 /*-----Special Offers!-----*/
 
+.offers {
+  display: flex;
+  margin-top: -66px;
+  height: 266px;
+  margin-bottom: 64px;
+
+  background-image: url("../images/banan.png");
+  background-repeat: no-repeat;
+  background-size: 608px;
+  background-position: right bottom;
+}
+
 .offers .title {
+  margin-top: 46px;
   font-size: 42px;
   line-height: 1.2;
 }
 
 .offers .text {
+  margin-top: 20px;
+  width: 656px;
+
   font-size: 16px;
   line-height: 1.5;
+}
+
+.offers .offers-button {
+  margin-top: 24px;
+} 
+
+.not-button {
+  margin-right: 32px;
+  width: 394px;    
+}
+
+.offers .button.primary {
+  padding: 11px 22px;
 }
 
 /*----------------Site Footer!------------------*/
