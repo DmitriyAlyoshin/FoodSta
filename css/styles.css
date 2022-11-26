@@ -495,11 +495,11 @@ button {
 
 .offers .offers-button {
   margin-top: 24px;
-} 
+}
 
-.not-button {
+.offers .not-button {
   margin-right: 32px;
-  width: 394px;    
+  width: 394px;
 }
 
 .offers .button.primary {
@@ -509,35 +509,69 @@ button {
 /*----------------Site Footer!------------------*/
 
 .page-footer {
-  display: flex; 
-  margin-top: 100px; 
+  display: flex;
+
+  background-image: url("../images/Fruit-Footer-min.jpg");
+  background-repeat: no-repeat;
+  background-size: 1211px;
+  background-position: right bottom;
+}
+
+.footer-section {
+  height: 395px;
+  width: 1248px;
 }
 
 .page-footer .footer-nav {
   display: flex;
-  /* justify-content: center; */
+  margin-top: 100px;
 }
 
 .page-footer .logo {
   margin-top: 0;
-  margin-right: 148px;
+  padding: 0;
+  width: 66px;
+  height: 52px;
+}
+
+.page-footer .site-nav {
+  margin-left: 148px;
+}
+
+.page-footer .footer-site-nav {
+  padding-top: 18px;
 }
 
 .page-footer .subscribe {
   display: inline-block;
-  margin-left: 320px;
+  margin-left: auto;
 }
 
 .page-footer .subscribe .text-subscripe {
   display: block;
-  
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
 }
+
 .footer-nav .subscribe .buttons-footer {
   margin-top: 12px;
   margin-bottom: 12px;
+}
+
+.footer-nav .subscribe .not-button {
+  width: 279px;
+}
+
+.footer-nav .subscribe .button.secondary {
+  padding: 9px 20px;
+}
+
+.footer-nav .subscribe .button.secondary:hover,
+.footer-nav .subscribe .button.secondary:hover {
+  border-color: var(--accent-btn-color);
+  background-color: var(--primary-white-color);
 }
 
 .page-footer .text-privacy {
@@ -565,6 +599,10 @@ button {
   font-size: 12px;
   line-height: 1.17;
   text-decoration: underline;
+}
+
+.page-footer .settings .item:not(:last-child) {
+  padding-right: 20px;
 }
 
 .page-footer .all-rights {
